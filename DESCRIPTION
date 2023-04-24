@@ -1,0 +1,14 @@
+Package: knit2docs
+Type: Package
+Title: Knit .Rmd files to Google Docs!
+Version: 0.1.0
+Author: Benjamin Smith
+Maintainer: Benjamin Smith <benyamindsmith@gmail.com>
+Description: See Github: https://github.com/benyamindsmith/knit2docs
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+        rmarkdown,
+        googledrive
+RoxygenNote: 7.2.3
