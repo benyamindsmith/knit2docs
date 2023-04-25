@@ -24,5 +24,6 @@ knit2docs<- function(rmd_file,
   googledrive::drive_upload(temp_file,
                             name = doc_name,
                             type = "application/vnd.google-apps.document",
-                            overwrite = TRUE)
+                            path = path,
+                            overwrite = overwrite)
 }
