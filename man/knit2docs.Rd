@@ -4,12 +4,14 @@
 \alias{knit2docs}
 \title{Knit .Rmd File to Google Docs}
 \usage{
-knit2docs(rmd_file, doc_name = ".Rmd to Docs", overwrite = TRUE)
+knit2docs(rmd_file, doc_name = ".Rmd to Docs", path = NULL, overwrite = TRUE)
 }
 \arguments{
 \item{rmd_file}{The file path of the .Rmd file that you want to knit.}
 
 \item{doc_name}{The title of the Doc}
+
+\item{path}{specify the path where the Google Doc will live. See the `path` argument in googledrive::drive_upload()}
 
 \item{overwrite}{Overwrite file if it exists. See the `overwrite` argument in googledrive::drive_upload()}
 }
