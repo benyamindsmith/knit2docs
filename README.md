@@ -9,3 +9,7 @@ Knit .Rmd files to Google Docs!
 
 devtools::install_github("benyamindsmith/knit2docs")
 ```
+
+# Blog Updates
+
+1. [Knitting .Rmd Files to Google Docs with knit2docs](https://bensstats.wordpress.com/2023/04/25/robservations-47-knitting-rmd-files-to-google-docs-with-knit2docs/)
