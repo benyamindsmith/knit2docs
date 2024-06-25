@@ -10,8 +10,10 @@
 #' @import googledrive
 #' @examples
 #' # NOTRUN
-#' knit2docs("Test.Rmd",doc_name=".Rmd to Docs")
-#'
+#' knit2docs(
+#' system.file("rmd/test.Rmd",package="knit2docs"),
+#' doc_name=".Rmd to Docs"
+#' )
 
 knit2docs<- function(rmd_file,
                      doc_name=".Rmd to Docs",
