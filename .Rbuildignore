@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^\.github$
 ^CRAN-SUBMISSION$
+^\docs

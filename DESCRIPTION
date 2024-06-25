@@ -1,6 +1,6 @@
 Package: knit2docs
 Type: Package
-Title: Knit .Rmd files to Google Docs!
+Title: Knit .rmd Files to Google Docs!
 Version: 0.1.0
 Authors@R: c(
     person("Benjamin", "Smith",email="benyamin.smith@mail.utoronto.ca" , role = c("aut","cre"),
