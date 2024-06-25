@@ -9,11 +9,13 @@
 #' @import rmarkdown
 #' @import googledrive
 #' @examples
-#' # NOTRUN
+#' \dontrun{
+#' library(knit2docs)
 #' knit2docs(
 #' system.file("rmd/test.Rmd",package="knit2docs"),
 #' doc_name=".Rmd to Docs"
 #' )
+#' }
 
 knit2docs<- function(rmd_file,
                      doc_name=".Rmd to Docs",

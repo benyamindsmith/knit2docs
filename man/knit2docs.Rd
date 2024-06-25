@@ -19,7 +19,11 @@ knit2docs(rmd_file, doc_name = ".Rmd to Docs", path = NULL, overwrite = TRUE)
 Knit a .Rmd file to a Google Doc (stored on Google Drive)
 }
 \examples{
-# NOTRUN
-knit2docs("Test.Rmd",doc_name=".Rmd to Docs")
-
+\dontrun{
+library(knit2docs)
+knit2docs(
+system.file("rmd/test.Rmd",package="knit2docs"),
+doc_name=".Rmd to Docs"
+)
+}
 }

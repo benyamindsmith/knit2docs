@@ -2,9 +2,10 @@ Package: knit2docs
 Type: Package
 Title: Knit .Rmd files to Google Docs!
 Version: 0.1.0
-Author: Benjamin Smith
-Maintainer: Benjamin Smith <benyamindsmith@gmail.com>
-Description: See Github: https://github.com/benyamindsmith/knit2docs
+Authors@R: c(
+    person("Benjamin", "Smith",email="benyamin.smith@mail.utoronto.ca" , role = c("aut","cre"),
+           comment = c(ORCID = "0009-0007-2206-0177")))
+Description: Knit RMarkdown (.Rmd) files to Google Doc files. 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -12,3 +13,5 @@ Imports:
         rmarkdown,
         googledrive
 RoxygenNote: 7.2.3
+URL: https://github.com/benyamindsmith/knit2docs
+BugReports: https://github.com/benyamindsmith/knit2docs/issues
