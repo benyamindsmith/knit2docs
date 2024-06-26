@@ -2,4 +2,5 @@
 ^\.Rproj\.user$
 ^\.github$
 ^CRAN-SUBMISSION$
-^\docs
+^\docs$
+^cran-comments\.md$
