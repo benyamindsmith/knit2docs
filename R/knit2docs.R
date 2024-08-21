@@ -31,7 +31,7 @@ knit2docs<- function(rmd_file=NULL,
                      path = NULL,
                      overwrite=TRUE){
   # Temporary File
-  temp_file<- tempfile(fileext = ".docx")|>basename()
+
 
   if(is.null(rmd_file) && is.null(qmd_file)){
     stop("rmd_file and qmd_file is unspecified. Please specify rmd_file or qmd_file arguments.")
@@ -43,12 +43,14 @@ knit2docs<- function(rmd_file=NULL,
 
   if(!is.null(rmd_file)){
     if(grepl("\\.rmd|\\.Rmd|\\.RMD",rmd_file)){
+      temp_file<- tempfile(fileext = ".docx")
       rmarkdown::render(rmd_file, "word_document", output_file = temp_file)
     }else{
     stop("Invalid file format for rmd_file.")
     }
   }else if (!is.null(qmd_file)){
     if(grepl("\\.qmd|\\.Qmd|\\.QMD",qmd_file)){
+      temp_file<- tempfile(fileext = ".docx") |> basename()
       quarto::quarto_render(qmd_file,output_format = "docx", output_file=temp_file)
     }else{
     stop("Invalid file format for qmd_file.")
@@ -60,4 +62,8 @@ knit2docs<- function(rmd_file=NULL,
                             type = "application/vnd.google-apps.document",
                             path = path,
                             overwrite = overwrite)
+
+  if(!is.null(qmd_file)){
+    unlink(temp_file)
+  }
 }
