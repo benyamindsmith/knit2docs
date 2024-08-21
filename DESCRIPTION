@@ -1,11 +1,11 @@
 Package: knit2docs
 Type: Package
-Title: Knit .rmd Files to Google Docs!
+Title: Knit '.Rmd' Files to 'Google Docs'!
 Version: 0.1.0
 Authors@R: c(
     person("Benjamin", "Smith",email="benyamin.smith@mail.utoronto.ca" , role = c("aut","cre"),
            comment = c(ORCID = "0009-0007-2206-0177")))
-Description: Knit RMarkdown (.Rmd) files to Google Doc files. 
+Description: Description: Knit 'rmarkdown' ('.Rmd') files to 'Google Docs' files. This package allows users to convert their '.Rmd' files directly into 'Google Docs' format, providing a seamless workflow for creating, editing, and sharing documents in a collaborative environment. It utilizes the 'googledrive' package for uploading and managing files in 'Google Drive'.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
@@ -15,3 +15,6 @@ Imports:
 RoxygenNote: 7.2.3
 URL: https://github.com/benyamindsmith/knit2docs
 BugReports: https://github.com/benyamindsmith/knit2docs/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

@@ -2,12 +2,20 @@
 % Please edit documentation in R/knit2docs.R
 \name{knit2docs}
 \alias{knit2docs}
-\title{Knit .Rmd File to Google Docs}
+\title{Knit .rmd or .qmd Files to Google Docs}
 \usage{
-knit2docs(rmd_file, doc_name = ".Rmd to Docs", path = NULL, overwrite = TRUE)
+knit2docs(
+  rmd_file = NULL,
+  qmd_file = NULL,
+  doc_name = ".rmd/.qmd to Docs",
+  path = NULL,
+  overwrite = TRUE
+)
 }
 \arguments{
-\item{rmd_file}{The file path of the .Rmd file that you want to knit.}
+\item{rmd_file}{The file path of the .rmd file that you want to knit.}
+
+\item{qmd_file}{The file path of the .qmd file that you want to knit.}
 
 \item{doc_name}{The title of the Doc}
 
@@ -16,14 +24,19 @@ knit2docs(rmd_file, doc_name = ".Rmd to Docs", path = NULL, overwrite = TRUE)
 \item{overwrite}{Overwrite file if it exists. See the `overwrite` argument in googledrive::drive_upload()}
 }
 \description{
-Knit a .Rmd file to a Google Doc (stored on Google Drive)
+Knit a .rmd or .qmd file to a Google Doc (stored on Google Drive)
 }
 \examples{
 \dontrun{
 library(knit2docs)
 knit2docs(
-system.file("rmd/test.Rmd",package="knit2docs"),
+rmd_file=system.file("rmd/test.Rmd",package="knit2docs"),
 doc_name=".Rmd to Docs"
+)
+
+knit2docs(
+qmd_file=system.file("qmd/test.qmd",package="knit2docs"),
+doc_name=".qmd to Docs"
 )
 }
 }
