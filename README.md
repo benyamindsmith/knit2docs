@@ -6,7 +6,7 @@
 ![](https://cranlogs.r-pkg.org/badges/knit2docs)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/knit2docs)
 
-Knit .Rmd files to Google Docs!
+Knit .rmd and .qmd files to Google Docs!
 
 # Install this package
 
